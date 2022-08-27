@@ -99,7 +99,7 @@ gulp.task('default', gulp.series(['js', 'sass', 'fonts', 'browser-sync', 'watch'
  * Push build to gh-pages
  */
  gulp.task('deploy', function () {
-	return gulp.src("./dist/**/*")
+	return gulp.src("./_site/**/*")
 	  .pipe(deploy({
 		remoteUrl: "https://github.com/tazadejava/tazadejava.github.io.git",
         branch: "master"
