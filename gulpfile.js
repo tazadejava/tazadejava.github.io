@@ -102,6 +102,7 @@ gulp.task('default', gulp.series(['js', 'sass', 'fonts', 'browser-sync', 'watch'
 	return gulp.src("./_site/**/*")
 	  .pipe(deploy({
 		remoteUrl: "https://github.com/tazadejava/tazadejava.github.io.git",
-        branch: "master"
+        branch: "master",
+		force: true
 	  }))
   });
